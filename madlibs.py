@@ -1,4 +1,4 @@
-from random import choice
+from random import choice, sample
 
 from flask import Flask, render_template, request
 
@@ -32,7 +32,7 @@ def greet_person():
 
     player = request.args.get("person")
 
-    compliment = choice(AWESOMENESS)
+    compliment = sample(AWESOMENESS, 3)
 
     return render_template("compliment.html",
                            person=player,
@@ -69,7 +69,10 @@ def show_madlib():
     else:
         rainbows = False
 
-    return render_template("madlib.html",
+    templates = ["madlib.html", "madlib1.html"]
+    madlib = choice(templates)
+
+    return render_template(madlib,
                            person=person,
                            color=color,
                            noun=noun,

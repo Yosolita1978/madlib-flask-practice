@@ -1,21 +1,22 @@
-h2.madlib {
-    color: yellow;
-    font-family: sans-serif;
-    font-size: 90px;
-}
-
-h1.madlib {
+h1.madlib1 {
     color: red;
     font-style: italic;
 }
 
-h3.madlib {
+h2.madlib1 {
+    color: black;
+    font-family: sans-serif;
+    font-size: 90px;
+    text-decoration: line-through;
+}
+
+h3.madlib1 {
     color: green;
     font-style: italic;
     text-decoration: underline; 
 }
 
-h4.madlib {
+h4.madlib1 {
     color: blue;
     font-size: 200px;
 }
