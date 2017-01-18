@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Game Time{% endblock %}
+{% block link %}<link rel="stylesheet" href="/static/base.css">{% endblock %}
+{% block content %}
+
+    <h1>Welcome to the game zone</h1>
+
+    <form action="/madlib">
+      Name a person? <input type="text" name="person"></br>
+      Pick a color: <select name="color">
+                    <option value="purple">Purple</option>
+                    <option value="blue">Blue</option>
+                    <option value="orange">Orange</option>
+                    <option value="black">Black</option>
+                    <option value="rainbow">Rainbow</option>
+                </select></br>
+      Give me a noun: <input type="text" name="noun"></br>
+      Give me an adjective: <input type="text" name="adjective"></br>
+      Choose your favorite food(s): <input type="checkbox" name="food" value="pizza">Pizza
+      <input type="checkbox" name="food" value="burgers">Burgers
+      <input type="checkbox" name="food" value="sprouts">Sprouts
+      <input type="checkbox" name="food" value="cheese">Cheese
+      <input type="checkbox" name="food" value="apples">Apples</br>
+      Do you like rainbows? 
+        <input type="radio" name="rainbows" value="Yes"> Yes
+        <input type="radio" name="rainbows" value="No"> No
+      <input type="submit">
+    </form>
+{% endblock %}

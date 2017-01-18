@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Game Results{% endblock %}
+
+{% block link %}<link rel="stylesheet" href="/static/madlibs1.css">{% endblock %}
+
+{% block content %}
+    <h1 class="madlib1">Once upon a time, {{ person }} bought a {{ noun }}.</h1>
+
+    <h1 class="madlib1">It was an unusual {{ noun }}, because it was {{ color }}. Super weird.</h1>
+
+    <h2 class="madlib1">{{ person }} and their {{ noun }} had a day that was {{ adjective }}, eating:</h2>
+
+    <h3 class="madlib1"><ol>{% for food in foods %}
+        <li>{{ food }}</li>
+    {% endfor %}</ol></h3>
+
+    {% if rainbows %}
+        <h4 class="madlib1">Then they saw a beautiful rainbow!!! The End.</h4>
+    {% endif %}
+
+{% endblock %}

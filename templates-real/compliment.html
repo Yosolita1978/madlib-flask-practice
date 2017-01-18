@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}A Compliment{% endblock %}
+{% block link %}<link rel="stylesheet" href="/static/base.css">{% endblock %}
+{% block content %}
+    <p>Hi {{ person }}! I think you're:</p>
+    <ul>{% for word in compliment %}
+        <li>{{ word }}!</li>
+    {% endfor %}</ul>
+
+    <p>Do you want to play a game?</p>
+
+    <form action="/game">
+        <input type="radio" name="game" value="Yes"> Yes
+        <input type="radio" name="game" value="No"> No
+        <input type="submit">
+    </form>
+{% endblock %}

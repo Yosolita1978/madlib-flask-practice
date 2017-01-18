@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Hello Game{% endblock %}
+{% block link %}<link rel="stylesheet" href="/static/base.css">{% endblock %}
+{% block content %}
+<h1>Hi There!</h1>
+
+<form action="/greet">
+  What's your name? <input type="text" name="person">
+  <input type="submit">
+</form>
+{% endblock %}
+
