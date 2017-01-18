@@ -1,0 +1,22 @@
+h2 {
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 90px;
+}
+
+h1 {
+    color: red;
+    font-style: italic;
+}
+
+
+h3 {
+    color: green;
+    font-style: italic;
+    text-decoration: underline; 
+}
+
+h4 {
+    color: blue;
+    font-size: 200px;
+}
